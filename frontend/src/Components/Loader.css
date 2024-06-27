@@ -1,0 +1,26 @@
+.custom-loader {
+    background: #0a0b0c;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 31px;
+}
+.custom-loader img {
+    animation: mymove 3s infinite;
+  }
+  
+  @keyframes mymove {
+    0%   {
+        max-width: 85%;
+    }   
+    25%  {
+        max-width: 100%;
+    }
+    75%  {
+        max-width: 100%;
+    }
+    100% {
+        max-width: 85%;
+    }
+  }

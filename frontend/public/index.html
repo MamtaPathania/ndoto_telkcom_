@@ -1,0 +1,88 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <link rel="icon" href="/tt.png"/>
+      <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="theme-color" content="#000000" />
+      <meta
+        name="description"
+      
+      />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Saira+Semi+Condensed:wght@600&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed&display=swap" rel="stylesheet">
+
+    
+      <title>NDOTO</title>
+    </head>
+    <body>
+      <noscript>You need to enable JavaScript to run this app.</noscript>
+      <div id="root"></div>
+   
+
+      <script>
+        const subdomain = window.location.hostname.split('.')[0];
+        let customTitle = "";
+    
+        // Map subdomains to custom titles
+        switch (subdomain) {
+          case "business":
+            customTitle = "Boss Moves";
+            break;
+          case "comedy":
+            customTitle = "LOL TV";
+            break;
+          case "videos":
+            customTitle = "Ndoto Streams";
+            break;
+          case "faith":
+            customTitle = "Faith First TV";
+          
+            loadGoogleAnalytics();
+            break;
+          case "woh":
+            customTitle = "Women Of Honour";
+            break;
+          case "beauty":
+            customTitle = "Beauty Tv";
+            break;
+          case "sports":
+            customTitle = "Sports & Beyond";
+            break;
+          case "luxury":
+            customTitle = "Luxury Living";
+            break;
+          case "fashion":
+            customTitle = "Fashion On Lock";
+            break;
+          case "topics":
+            customTitle = "Hot Topics";
+            break;
+          default:
+            customTitle = subdomain;
+        }
+    
+        document.title = customTitle;
+    
+        function loadGoogleAnalytics() {
+          // Add the Google Tag Manager script
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-7R6S6D6WFF';
+          document.head.appendChild(script);
+     
+          // Initialize the Google Analytics tag
+          script.onload = function() {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-7R6S6D6WFF');
+          };
+        }
+      </script>
+      
+    </body>
+  </html>

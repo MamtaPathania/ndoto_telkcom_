@@ -1,0 +1,24 @@
+.sidebar-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #232323;
+    transform: translateX(-250px);
+    transition: transform 0.3s;
+    z-index: 100;
+  }
+  
+  .sidebar-menu.open {
+    transform: translateX(0);
+  }
+  
+  .font-family{
+    font-family: 'Poppins', sans-serif;;
+  }
+
+  .drawer-content {
+    height: calc(100vh - 70px); /* Minus the height of the header to fit on the screen */
+    overflow-y: auto; /* Will display vertical scrollbar when content height exceeds .drawer-content height */
+}

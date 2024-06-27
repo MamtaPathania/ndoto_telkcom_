@@ -1,0 +1,143 @@
+.vt-login-main {
+    padding-top: 16px;
+    height: 100vh;
+}
+
+.slider-main img {
+    height: 500px !important;
+}
+.common-img img {
+    height: 500px !important;
+    margin: auto;
+}
+/* Sticky Navbar Styles */
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    background-color: #0a0b0c; /* Adjust the background color as needed */
+    z-index: 100;
+  }
+  
+  /* Sticky Footer Styles */
+  .sticky-footer {
+    position: sticky;
+    bottom: 0;
+    background-color: #0a0b0c; /* Adjust the background color as needed */
+    color: white;
+    z-index: 100;
+  }
+  
+
+  h1 {
+    position: relative;
+  }
+  
+  h1::after {
+    content: "";
+    display: block;
+    border-bottom: 1px dashed white;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  
+  
+  
+  
+
+/* Change the color and size of the dots */
+.slick-dots {
+    text-align: center;
+  }
+  
+  .slick-dots li button:before {
+    color: white !important;
+    font-size: 12px !important; /* Adjust the font size to increase or decrease dot size */
+  }
+  
+  
+.vt-login-inner h1 {
+    text-align: center;
+    color: red;
+    font-size: 25px;
+    margin-bottom: 24px;
+}
+.vt-login-inner label {
+    color: red;
+    margin-right: 16px;
+}
+.vt-btn-main {
+    text-align: center;
+    margin-top: 25px;
+}
+.vt-btn-main button {
+    background: red;
+    width: 100px;
+    height: 42px;
+    color: #fff;
+}
+.vt-login-inner {
+    background: #000;
+    padding: 80px;
+}
+.vt-grid-main {
+    display: flex;
+}
+
+.vt-grid-main2{
+    display:flex;
+}
+
+@media screen and (max-width: 768px) {
+.search-field {
+    width: 128px !important;
+}
+.main-logo img {
+    width: 90px;
+}
+.vt-login-main {
+    padding: 0 20px;
+    padding-top: 16px;
+}
+.slick-next {
+    /* right: 14px !important;
+    z-index: 99; */
+    display: none !important;
+
+}
+.slick-prev {
+    /* left: 14px !important;
+    z-index: 99; */
+    display: none !important;
+}
+.vt-divider {
+    width:150px!important;
+}
+.vt-video-box {
+    padding: 0 18px;
+    margin: 16px 0;
+}
+.vt-grid-main {
+    display: grid;
+}
+
+
+}
+@media screen and (max-width: 1024px) {
+    .vt-video-box {
+        padding: 0 18px;
+        margin: 16px 0;
+    } 
+}
+
+@media screen and (max-width: 480px) {
+.slider-main img {
+    height: 250px !important;
+}
+
+.vt-title-main h5 {
+    font-size: 13px;
+}
+}
